@@ -1,0 +1,19 @@
+.header-attachments-container{
+    padding: 2rem;
+}
+.add-logo-button{
+    font-size: 1.25rem;
+    background-color: $accentColor;
+    padding: 2rem;
+    color: white;
+    // position: relative;
+    border-radius: 5px;
+}
+.add-logo-input{
+    // position: absolute;
+   display: none;
+}
+.company-logo-display{
+    height: 70px;
+    width: 70px;
+}

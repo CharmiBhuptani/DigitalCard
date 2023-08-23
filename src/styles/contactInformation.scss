@@ -1,0 +1,18 @@
+.remove-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cancel-item-button{
+    margin-left: 1rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 8px;
+}
+.dynamic-fields-container{
+    margin-top: 1rem;
+}
+.add-product-card{
+    padding: 1rem;
+    background-color: aliceblue !important;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,21 @@
+$accentColor: #009ef7;
+$grayColor: #b8ccd8;
+
+$break-xs: '(max-width:575px)';
+$break-sm: '(min-width:576px) and (max-width:767px)';
+$break-md: '(min-width:768px) and (max-width:991px)';
+$break-lg: '(min-width:992px) and (max-width:1199px)';
+$break-xl: '(min-width:1200px) and (max-width:1399px)';
+$break-xxl: '(min-width:1400px)';
+$break-xxl-range: '(min-width:1400px) and (max-width:1599px)';
+
+$break-sm-open: '(min-width:576px)';
+$break-md-open: '(min-width:768px)';
+$break-lg-open: '(min-width:992px)';
+$break-xl-open: '(min-width:1200px)';
+
+$break-sm-close: '(max-width:767px)';
+$break-md-close: '(max-width:992px)';
+$break-lg-close: '(max-width:1199px)';
+$break-xl-close: '(max-width:1399px)';
+

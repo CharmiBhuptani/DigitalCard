@@ -1,0 +1,234 @@
+.preview-card{
+     border: solid 4px $accentColor;
+    width: 25rem;
+    height: 40rem;
+    position: fixed;
+    
+    top: 7rem;
+    border-radius: 1rem;
+    overflow: scroll;
+    @media screen and #{$break-lg} {
+        width: 28rem;
+        right: 4rem;
+    }
+    @media screen and #{$break-xl-open} {
+        right: 10rem;
+    }
+    @media screen and #{$break-md-close} {
+        width: 100%;
+        position: unset;
+
+    }
+}
+.preview-header{
+    background-color: $accentColor;
+    text-transform: uppercase;
+    padding: 2.5rem 0;
+    font-weight: 500;
+    @media screen and #{$break-md-close} {
+        padding: 0.5rem 0;
+        position: sticky;
+        top: 0;
+    }
+}
+.download{
+    border: solid 4px $accentColor;
+}
+.name-container{
+    padding: 0.1rem 0 1rem 0;
+}
+.black-rular{
+    border-bottom: 1px solid black;
+    padding: 3px;
+}
+.preview-first-name, .preview-last-name{
+    // padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.preview-company-name{
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.preview-company-description{
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 17px;
+    white-space: pre-wrap;
+    @media screen and #{$break-lg} {
+        padding: 1rem 2rem;
+    }
+}
+.company-logo{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+.company-logo-container{
+    padding-top: 0.5rem;
+}
+.address-card{
+    padding: 1rem 1rem 0 1rem;
+}
+.address-preview{
+    margin-bottom: 0.8rem;
+    white-space: pre-wrap;
+    // padding-left: 4px;
+    display: flex;
+    padding: 1rem 1rem;
+    background-color: aliceblue;
+    // padding-bottom: 1rem;
+}
+.address-preview-container, .phone-preview-container, .whatsapp-preview-container{
+    padding: 0 1rem;
+}
+.phone-preview{
+    // padding-bottom: 1rem;
+    background-color: aliceblue;
+    padding: 1rem 1rem;
+    margin-bottom: 0.8rem;
+}
+.whatsapp-preview{
+    background-color: aliceblue;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+.address-card-container{
+    margin: 2rem 6rem;
+    white-space: pre-wrap;
+    @media screen and #{$break-lg} {
+        margin: 2rem 2rem;
+    }
+    @media screen and #{$break-sm-close} {
+        margin: 2rem 1rem;
+    }
+}
+.location-icon{
+    padding: 0.8rem 0.9rem;
+    display: inline-block;
+    border: solid 1px #009ef7;
+    border-radius: 60px;
+}
+.location-icon-square{
+    padding: 0.8rem 0.9rem;
+    display: inline-block;
+    border: solid 1px #009ef7;
+    border-radius: 10px;
+}
+ .whatsapp-icon, .phone-icon{
+    display: inline-block;
+    border: solid 1px #009ef7;
+    border-radius: 60px;
+    padding: 0.8rem 0.8rem;
+}
+ .whatsapp-icon-square, .phone-icon-square{
+    display: inline-block;
+    border: solid 1px #009ef7;
+    padding: 0.8rem 0.8rem;
+    border-radius: 10px;
+}
+.address-text, .phone-text, .whatsapp-text{
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.product-image{
+    height: 170px;
+    width: 170px;
+    border-radius: 10px;
+}
+.preview-product-name, .preview-product-price{
+    font-size: 1.15rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.preview-product{
+    padding: 1rem;
+    margin: 1rem 4rem;
+    border: #33bbd8 solid 1px ;
+}
+
+.product-main-container{
+    margin-top: 1rem;
+}
+.icons-container{
+    padding-bottom: 1rem;
+    // margin-top: 1rem;
+}
+.preview-icons-circle{
+   
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1.5rem 1rem;
+    background-color: #009ef7;
+    color: white !important;
+    width: 3rem;
+
+}
+.preview-icons{
+        display: inline-block;
+        padding: 1.5rem 1.15rem;
+        background-color: $accentColor;
+        color: white !important;
+        border-radius: 10px;
+
+}
+.icon{
+    padding: 0 0.5rem;
+}
+.preview-card::-webkit-scrollbar {
+    display: none;
+}
+.products-container{
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+.company-link{
+    font-weight: 500;
+}
+.bottom-navbar {
+    overflow: hidden;
+    background-color: $accentColor;
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem;
+  }
+  .bottom-navbar-container{
+    position: sticky;   
+    bottom: 0;
+  }
+  .bottom-navbar-text{
+    display: none;
+  }
+  .bottom-navbar a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all ease-out 300ms;
+  }
+  
+  .bottom-navbar a:hover {
+    background: aliceblue;
+    color: black;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+    .bottom-navbar-text{
+        display: unset;
+    }
+  }
+//   .main-1{
+//     position: sticky;
+//     bottom: 0;
+//   }
+  
+//   .bottom-navbar a.active {
+//     background-color: #04AA6D;
+//     color: white;
+//   }
+  

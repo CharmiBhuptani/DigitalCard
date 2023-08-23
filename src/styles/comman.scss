@@ -1,0 +1,289 @@
+@import '../styles/variables';
+
+.main-container{
+    display: flex;
+    @media screen and #{$break-md-close} {
+        display: unset;
+    }
+}
+
+.heading{
+    font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: 1.2px;
+    padding:  0 1rem;
+    @media screen and #{$break-sm-close} {
+        font-size: 1.15rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 0 1rem;
+    }
+}
+.heading-2{
+    font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+    padding: 0 1rem;
+}
+label{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+.global-rular{
+    border-bottom: 1px solid $accentColor;
+    padding: 3px;
+}
+.global-button{
+    background-color: $accentColor;
+    border:none;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    @media screen and #{$break-sm-close} {
+    padding: 5px;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    }
+}
+.global-bordered-button{
+    background-color: white;
+    border:solid 1px $accentColor;
+    border-radius: 5px;
+    padding: 8px;
+    color: $accentColor;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    @media screen and #{$break-sm-close} {
+    padding: 5px;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    }
+}
+.global-disabled-button{
+    background-color: aliceblue;
+    border:none;
+    border-radius: 5px;
+    padding: 8px;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.color-input{
+    height: 50px;
+    width: 12rem !important;
+}
+.dropdown-button {
+    height: 48px !important;
+    background: white !important;
+    color: black !important;
+}
+div[id^=font-picker] ul li button:hover, div[id^=font-picker] ul li button:focus{
+    background-color: #9edbff !important;
+}
+div[id^=font-picker] ul li button.active-font {
+    background-color:  #009ef7 !important;
+}
+div[id^=font-picker] ul{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px !important; 
+ background: white !important;
+}
+
+
+.menu-container{
+    display: flex;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+    @media screen and #{$break-md-close} {
+    position: sticky;
+    top: 0;
+    background: white;
+    }
+}
+.logo{
+    color: $accentColor;
+    letter-spacing: 3px;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 0.5rem 0.5rem;
+    @media screen and #{$break-sm-close} {
+        display: flex;
+        justify-content: center;
+    }
+}
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 3rem;
+}
+.edit-icon{
+    color: black !important;
+}
+
+.qr-icon{
+    color: black !important;
+}
+.qr-button{
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.56rem !important;
+    @media screen and #{$break-xs} {
+        padding: 0.1rem 0.25rem!important;
+    }
+}
+.edit-button{
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.5rem;
+    background-color: #75d8ff !important;
+    @media screen and #{$break-xs} {
+        padding: 0.1rem 0.25rem!important;
+    }
+}
+.delete-button{
+    font-size: 0.75rem !important;
+    background-color: #ff0000 !important;
+    padding: 0.4rem 0.56rem !important;
+    @media screen and #{$break-xs} {
+        padding: 0.1rem 0.25rem!important;
+    }
+}
+.qr-button{
+    background-color: lightgray !important;
+}
+.app-main-container{
+    padding: 3rem;
+    @media screen and #{$break-sm-close} {
+        padding: 0rem;
+    }
+}
+.navbar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+.ReactModal__Content--after-open{
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    // background-color: #f5fbfe !important;
+}
+.ReactModal__Overlay{
+    inset: -27PX !important;
+}
+a {
+    text-decoration: unset !important;
+    color: black !important;
+  }
+  a:-webkit-any-link{
+    text-decoration: none  !important;
+    color: black !important;
+  }
+  .table-container{
+    padding-top: 1rem;
+  }
+  .table-head tr{
+    padding: 1.5rem 0rem 1rem 0.8rem !important;
+        font-size: 1.05rem;
+  }
+  .btn{
+    padding: 1px 6px !important; 
+  }
+
+//   ---toggle----
+.toggle-button{
+    background-color: lightgray;
+    border: 0;
+    // border-radius: 50px;
+    cursor: pointer;
+    height: 25px;
+    position: relative;
+    width: 60px;
+    -webkit-appearance: none;
+  }
+  .toggle-button:hover { background-color: lightgray; }
+.toggle-button:focus,
+.toggle-button:active { outline: none; }
+.toggle-button::-moz-focus-inner { border: 0; }
+.pin {
+    background-color: white;
+    height: 23px;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    width: 20px;
+    transition: left ease 0.5s;
+    border-radius: 5px;
+  }
+  .toggle-button.on {
+    background-color: $accentColor;
+  }
+  
+  .toggle-button.on .pin {
+    left: 39px;
+  }
+  
+  
+//   ---toggle----
+.customize-card{
+   padding: 1rem;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.credits-container{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    @media screen and #{$break-xs} {
+        justify-content: flex-start;
+    }
+}
+.fonts{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.table-head{
+    background-color: aliceblue;
+}
+.customize-container{
+    display: flex;
+    justify-content: space-between;
+    @media screen and #{$break-xs} {
+        flex-direction: column;
+    }
+}
+.close-modal-button{
+    background: none;
+    border: none;
+}
+.qr-code-container{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.loader{
+    height: 10rem;
+}
+.my-qr-code{
+    height: 10rem !important;
+    width: 10rem !important;
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
+    padding: 5rem !important;
+}
+.card-listing-table{
+    td, th{
+        padding: 1.5rem !important;
+    }
+}
